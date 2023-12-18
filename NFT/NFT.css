@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(9, 9, 21);
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+    animation-name: moveInBottom;
+    animation-duration: 5s;
+
+}
+
+.container {
+    background-color: rgb(7, 7, 13);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden; 
+    /* Clear the floats */
+}
+
+.up {
+    background-color: rgb(23, 23, 67);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Clear the floats */
+}
+
+.one {
+    float: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.two {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.img-1 {
+    padding: 0px;
+    height: 250px;
+
+    animation-name: moveInBottom;
+    animation-duration: 5s;
+
+}
+
+.img-2 {
+    height: 20px;
+}
+
+.last {
+    float: left;
+    clear: both; /* Clear the floats */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(30, 30, 107); 
+
+}
+
+.last img {
+    margin-right: 10px;
+}
+
+
+
+h3 {
+    text-align: center;
+    text-align: left;
+    padding: 0px;
+}
+
+p {
+    text-align: justify;
+    
+    font-size: 15px;
+}
+button {
+    margin: 50px;
+}
+
+
+@keyframes moveInRight {
+    0%{
+    opacity: 0;
+ transform: translateY(-70rem);
+    }
+
+    80%{
+        opacity: 0;
+transform: translateY(-10rem);
+    }
+    100%{
+        opacity: 1;
+transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+         transform: translateY(3rem);
+    }
+    
+
+    100% {
+         opacity: 1;
+         transform: translate(0);
+    }
+}
